@@ -1,3 +1,66 @@
-This is a shared file.
-Line 1: Original text.
-Line 2: Original text.
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+
+% Title formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{\thepage}
+
+\begin{document}
+
+% HEADER WITH PHOTO
+\begin{minipage}{0.7\textwidth}
+    \Huge \textbf{Souvik gayen} \\[6pt]
+    \normalsize
+    kalyani ghoshpara ward no.3 \\
+    pin 741235 \\
+    Phone: (123) 456-7890 \\
+    Email: abcdefghi.com
+\end{minipage}
+\hfill
+\begin{minipage}{0.25\textwidth}
+ \includegraphics[width=\linewidth]{ac2.jpg} % Use actual photo file name
+\end{minipage}
+
+\vspace{1em}
+
+% EDUCATION TABLE
+\section*{Degrees and Education}
+\begin{tabularx}{\textwidth}{|X|X|X|}
+\hline
+\textbf{Degree} & \textbf{Institution} & \textbf{Year} \\
+\hline
+B.Sc. in Computer Science & Makaut University & 2024 \\
+\hline
+b.sc in cyber security & Institute of Technology & 2025 \\
+\hline
+b.sc in cyber security & University Research Institute & 2025 \\
+\hline
+\end{tabularx}
+
+% AWARDS
+\section*{Awards and Achievements}
+\begin{itemize}
+    \item Winner – hackthon winner (2023)
+    \item Best Paper – jpg  (2024)
+    \item AI Ethics Fellow – International AI Forum (2024)
+\end{itemize}
+
+% SKILLS
+\section*{Languages, Computer, and Other Skills}
+\textbf{Languages:} English (native), French (basic) \\
+\textbf{Computer Skills:} Python, C, SQL, LaTeX, TensorFlow, Git, Bash \\
+\textbf{Other Skills:} Public speaking, Research writing, Critical thinking
+
+% INTERESTS
+\section*{Activities and Interests (Optional)}
+Reading sci-fi novels, AI ethics debates, virtual chess, running
+
+\end{document}
